@@ -1,9 +1,11 @@
 version: 2
 sources:
-    - name: Github
+    - name: github
       project: bigquery-public-data
       dataset: github_repos
       description: Contents from public, open source licensed repositories on GitHub
     
       tables:
         - name: licenses
+        - name: sample_commits
+        - name: commits

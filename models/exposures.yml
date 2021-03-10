@@ -1,0 +1,15 @@
+version: 2
+exposures:
+  
+  - name: user_behaviour
+    type: dashboard
+    maturity: low
+    url: 'https://datastudio.google.com/u/0/explorer/7b301aba-285b-4061-844e-a6fc304298b7'
+    description: Dashboard to analyse user behaviour
+    
+    depends_on:
+      - ref('commits_by_hour')
+      
+    owner:
+      name: Rebekka Moyson
+      email: rebekka.moyson@ml6.eu
