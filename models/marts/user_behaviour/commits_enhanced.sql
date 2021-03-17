@@ -3,7 +3,7 @@ SELECT
 commits.*,
 mapping.timezone,
 DATETIME(TIMESTAMP_SECONDS(commits.committer.time_sec), mapping.timezone) as committer_local_datetime
-{% if target.name == 'dev' %}
+{% if target.name  != 'prd' %}
 FROM {{ source('github', 'sample_commits')}} as commits
 {% else %}
 FROM {{ source('github', 'commits')}} as commits
