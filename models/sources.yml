@@ -7,5 +7,11 @@ sources:
     
       tables:
         - name: licenses
+          columns:
+          - name: repo_name
+            description: Unique name for a repository
+            tests:
+              - unique
+              - not_null
         - name: sample_commits
         - name: commits
