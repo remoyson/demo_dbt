@@ -1,6 +1,6 @@
 version: 2
 
-models:
+seeds:
   - name: mapping_time_offset_zone
     description: reference for mapping time offset to time zone
     columns:
