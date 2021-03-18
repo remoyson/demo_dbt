@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: mapping_time_offset_zone
+    description: reference for mapping time offset to time zone
+    columns:
+      - name: tz_offset
+        tests:
+          - not_null
+          - unique

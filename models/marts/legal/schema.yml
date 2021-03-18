@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: use_of_licenses
+    description: analyse distrubution of licenses on Github
+    columns:
+      - name: license
+        tests:
+          - not_null
+          - unique
